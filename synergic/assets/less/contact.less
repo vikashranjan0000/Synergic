@@ -1,0 +1,224 @@
+/*.contact-info {
+  display: flex;
+  margin-bottom: 4.2rem;
+  .lgx-address-box {
+    flex: 1;
+    margin-bottom: 2.6rem;
+    text-align: center;
+    .address {
+      .title {
+        color: @brand-color;
+        font-weight: 400;
+        letter-spacing: normal;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+
+}
+.lgx-contactform {
+  text-align: center;
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  .form-control {
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 1.5rem 2rem;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: @white-color;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  textarea.form-control {
+    height: 170px;
+  }
+  .lgx-btn {
+    //margin: 0 auto;
+    margin-top: 1rem;
+  }
+}*/
+.lgx-contactform-area {
+  padding: 6.8rem;
+  -moz-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.2);
+  -webkit-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.2);
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.2);
+  .lgx-about-content-area {
+    padding-top: 0;
+  }
+}
+
+input,
+textarea,
+.wpcf7-form-control,
+.form-control {
+  display: block;
+  text-align: left;
+  width: 100%;
+  height: 60px;
+  padding: 1.5rem 2rem;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: @white-color;
+  background-image: none;
+  border: 1px solid @border-color;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s,
+  -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,
+  box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,
+  box-shadow ease-in-out .15s;
+}
+
+textarea,
+textarea.form-control {
+  height: 170px;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+.form-control:focus,
+.form-control:hover,
+.wpcf7-form-control:focus,
+.wpcf7-form-control:hover {
+  -webkit-box-shadow: 0 0 15px 0 rgba(68,67,73,.1);
+  -moz-box-shadow: 0 0 15px 0 rgba(68,67,73,.1);
+  box-shadow: 0 0 15px 0 rgba(68,67,73,.1);
+  border: 1px solid @brand-color;
+}
+
+
+.wpcf7-submit:focus,
+.wpcf7-submit:hover {
+  border: 0 solid @brand-color;
+}
+
+
+
+//CONTACT FORM 7  Start
+
+//BTN
+.wpcf7-form .lgx-btn {
+  padding: 1.2rem 2.3rem 1.5rem 5rem;
+  float: right;
+  margin-top: 1rem;
+  text-align: center;
+  br {
+    display: none;
+  }
+  .wpcf7-form-control {
+    z-index: 3;
+    height: 42px;
+    .transition-duration(@duration: 0.3s);
+  }
+}
+
+// Default
+.wpcf7 {
+  .transition-duration(@duration: 0.3s);
+  input[type="submit"] {
+    width: auto;
+    .transition-duration(@duration: 0.3s);
+  }
+}
+.wpcf7 label {
+  font-family: @lgx-base-font;
+  text-transform: uppercase;
+  color: @border-color;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  .wpcf7-form-control-wrap {
+    margin-top: 5px;
+    display: block;
+  }
+
+}
+
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.wpcf7 {
+  label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  span.wpcf7-not-valid-tip {
+    font-style: italic;
+  }
+  div.wpcf7-validation-errors {
+    border: 2px solid red;
+  }
+
+  p {
+    margin-bottom: 10px!important;
+  }
+}
+
+
+
+
+
+
+textarea.wpcf7-textarea {
+  height: 170px;
+  margin-bottom: 1.6rem;
+  //width: 100%;
+}
+
+
+.lgx-contact-form {
+  .lgx-contact-inner {
+    .lgx-contact-form-inline {
+      display: flex;
+      margin-left: -.5rem;
+      margin-right: -.5rem;
+      .wpcf7-form-control-wrap {
+        flex: 1;
+        margin-left: .5rem;
+        margin-right: .5rem;
+      }
+    }
+    .wpcf7-form-control-wrap {
+      margin-bottom: 2rem;
+    }
+
+  }
+}
+
+.lgx-btn-sp {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  .wpcf7-submit {
+    padding: 1.2rem 3rem;
+    border: none;
+  }
+}
+
+.help-block {
+  color: #e74f3f;
+  margin: 0;
+}
+

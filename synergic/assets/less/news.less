@@ -1,0 +1,105 @@
+.lgx-news {
+  //background: @white-color;
+}
+
+.lgx-news-black {
+  background: url('../img/registration-bg.jpg') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@black-color, .9);
+  }
+}
+
+.lgx-single-news {
+  margin-bottom: 2.6rem;
+  .bg-rgba(@white-color, 1);
+  overflow: hidden;
+  position: relative;
+  -moz-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+  -webkit-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+  box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+  .lgx-btn {
+    margin-top: 1rem;
+  }
+
+  figure {
+    position: relative;
+    //overflow: hidden;
+    z-index: 9;
+    a img {
+      .transition-duration(@duration: 0.5s);
+    }
+    .date {
+      position: absolute;
+      bottom: -2rem;
+      right: 2rem;
+      border-radius: 100px;
+      padding: 1rem 3rem;
+      background: @brand-color;
+      .font-size(14);
+      color: @white-color;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin: 0;
+      -webkit-box-shadow: 0 4px 10px rgba(64, 66, 239,.3);
+      -moz-box-shadow: 0 4px 10px rgba(64, 66, 239,.3);
+      box-shadow: 0 4px 10px rgba(64, 66, 239,.3);
+      .transition-duration(@duration: 0.3s);
+    }
+
+  }
+  .single-news-info {
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    padding: 1.6rem 2.6rem 3rem;
+    .cat {
+      .font-size(16);
+      font-weight: 400;
+      color: @brand-color2;
+      margin: 0;
+    }
+  }
+  .title {
+    .font-size(20);
+    font-weight: 900;
+    line-height: 2.6rem;
+    margin-top: .5rem;
+  }
+  .lgx-btn {
+    margin-top: 2rem;
+  }
+  &:hover {
+    &:after {
+      left: 42%;
+      opacity: 1;
+    }
+    figure {
+      .date {
+        background: @brand-color2;  /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to left, @brand-color3, @brand-color2);  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to left, @brand-color3, @brand-color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -moz-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        right: 2.6rem;
+      }
+      a img {
+      }
+      figcaption {
+        .date {
+          -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft;
+          -webkit-transform-origin: center;
+          transform-origin: center;
+          animation-duration: 600ms;
+          animation-timing-function: linear;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

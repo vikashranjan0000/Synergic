@@ -1,0 +1,411 @@
+.lgx-banner {
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    padding: 20rem 0 11rem;
+  }
+}
+
+.lgx-banner-parallax {
+  background: url('http://placehold.it/1920x1241') top center no-repeat;
+}
+.lgx-banner-brand {
+  background: url('http://placehold.it/1921x1506') top center no-repeat;
+}
+
+.lgx-banner3 {
+  background: url('http://placehold.it/1921x1053') top center no-repeat;
+}
+.lgx-banner4 {
+  background: url('http://placehold.it/1921x1053') top center no-repeat;
+}
+
+.lgx-banner6 {
+  background: url('http://placehold.it/1921x1053') top center no-repeat;
+}
+
+
+.lgx-banner-default {
+  .lgx-inner {
+    padding: 22rem 0 11rem;
+  }
+}
+
+
+.lgx-banner {
+  .lgx-inner-md {
+    padding: 24rem 0 18rem;
+  }
+}
+
+
+
+.lgx-banner-info-area {
+  display: flex;
+}
+
+
+
+
+.lgx-banner-info {
+  color: @black-color;
+  .lgx-videoicon-area {
+    //overflow: hidden;
+    position: relative;
+    top: 27px;
+    margin-top: -45px;
+    left: -2rem;
+    .header-video-text {
+      text-align: left;
+      position: absolute;
+      top: 43px;
+      display: block;
+      right: -10rem;
+    }
+  }
+  .lgx-videoicon-area-gap {
+    margin-top: -20px;
+  }
+  .pretitle {
+    .font-size(26);
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    padding-left: 60px;
+    margin: 0;
+    color: rgba(47, 57, 69, 0.4);
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 50px;
+      height: 5px;
+      background: @brand-color2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, @brand-color3, @brand-color2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, @brand-color3, @brand-color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: width .3s;
+      left: 0;
+      top: 18px;
+    }
+  }
+  .title {
+    margin: 0;
+    font-family: @lgx-base-font;
+    .font-size(68);
+    line-height: 7.5rem;
+    font-weight: 900;
+    //color: @white-color;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    span {
+      color: @brand-color;
+    }
+    b {
+      color: @brand-color2;
+      font-weight: 900;
+    }
+    i, span {
+      font-style: normal;
+      b:nth-child(1) {
+        color: @brand-color2;
+      }
+      b:nth-child(2) {
+        color: @brand-color3;
+      }
+      b:nth-child(3) {
+        color: @brand-color4;
+      }
+    }
+  }
+  .ripple-block {
+    position: relative;
+    width: 7em;
+    height: 7em;
+    display: inline-block;
+  }
+  .fa-play {
+    font-size: 20px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 5px;
+    background: @brand-color2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, @brand-color3, @brand-color2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, @brand-color3, @brand-color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .ripple {
+    width: 7em;
+    height: 7em;
+  }
+  .action-area {
+    display: flex;
+    margin-top: 4.2rem;
+    .lgx-btn {
+      margin-right: .5rem;
+    }
+  }
+}
+
+.lgx-banner-info-white {
+  color: @white-color;
+  .lgx-videoicon-area {
+    .header-video-text {
+    }
+  }
+  .pretitle {
+    color: rgba(255, 255, 255, 0.4);
+    &:after {
+    }
+  }
+  .title {
+    color: @white-color;
+    span {
+      color: @brand-color2;
+    }
+    b {
+      color: @brand-color2;
+    }
+  }
+  p {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+
+
+.lgx-banner-info-center {
+  text-align: center;
+  width: 100%;
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .action-area {
+    display: inline-block;
+  }
+}
+
+
+
+.lgx-slider-center {
+  .owl-item {
+    .slider-text-single {
+      figure {
+        overflow: hidden;
+        img {
+          -webkit-transition: all 0.3 ease;
+          transition: all 0.3s linear;
+        }
+        figcaption {
+          .bg-rgba(black, .5);
+        }
+      }
+      &:hover {
+        figure {
+          img {
+            -ms-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+    .lgx-banner-info {
+      opacity: 0;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3s linear;
+    }
+  }
+  .owl-item.active.center {
+    .slider-text-single figure figcaption {
+      background: transparent;
+    }
+    .lgx-banner-info {
+      opacity: 1;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3s linear;
+    }
+  }
+  .lgx-banner-info {
+    color: @white-color;
+    padding: 0 5rem;
+    .subtitle {
+      .font-size(42);
+      font-weight: 900;
+      color: @brand-color;
+      margin: 0;
+      line-height: 4.2rem;
+    }
+    .title {
+      .font-size(68);
+      font-weight: 900;
+      color: @white-color;
+      margin: 0;
+      line-height: 8.5rem;
+      margin-bottom: 2.6rem;
+    }
+    .text {
+      color: @white-color;
+      margin-bottom: 2.6rem;
+      opacity: .7;
+    }
+    .lgx-btn {
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+
+
+.lgx-banner-info-reservation {
+  margin-top: 6.8rem;
+}
+
+
+
+.lgx-banner-info2 {
+  color: @white-color;
+  .subtitle {
+    .font-size(68);
+    font-weight: 900;
+    color: @brand-color;
+    margin: 0;
+    line-height: 7rem;
+  }
+  .title {
+    .font-size(68);
+    font-weight: 900;
+    color: @black-color;
+    margin: 0;
+    line-height: 8.5rem;
+    margin-bottom: 4.2rem;
+  }
+}
+
+
+
+
+
+//RESPONSIVE
+/* ----------------------------------------------------------------------
+     Small devices (tablets, UP TO 991px~768px)
+ -----------------------------------------------------------------------*/
+@media (max-width : @screen-sm-max) {
+  /************** 991 GLOBAl USE***********/
+  .lgx-banner .lgx-inner {
+    padding: 16rem 0 10rem;
+  }
+  .lgx-banner-info .title {
+    .font-size(68);
+    line-height: 7.8rem;
+  }
+  .lgx-banner-info .subtitle {
+    .font-size(42);
+    line-height: 5rem;
+  }
+  .lgx-banner-info .action-area {
+    margin-top: 3rem;
+  }
+  /************** 991 GLOBAl USE END ***********/
+}
+
+
+
+
+/* ---------------------------------------------------------------------
+    Extra small devices (phones, less UP TO 767px)
+ ----------------------------------------------------------------------*/
+@media (max-width : @screen-xs-max) {
+  /************** 767 GLOBAl USE***********/
+  .banner-content .lgx-banner-info {
+    padding: 0 15px !important;
+  }
+
+  .lgx-banner-info .title {
+    font-size: 4.2rem;
+    line-height: 5rem;
+  }
+
+  .lgx-banner .lgx-inner {
+    padding: 11rem 0;
+  }
+
+
+  .slider-text-single {
+    figure {
+      overflow: hidden;
+      img {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3s linear;
+        height: 400px;
+      }
+      figcaption {
+
+      }
+    }
+    &:hover {
+      figure {
+        img {
+          -ms-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+  /*.lgx-slider-center .lgx-banner-info .subtitle {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .lgx-slider-center .lgx-banner-info .title {
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }*/
+
+  /************** 767 GLOBAl USE END***********/
+
+}/*767 END*/
+
+
+/* ----------------------------------------------------------------
+      Custom, iPhone Retina  UP TO 480px
+-------------------------------------------------------------------*/
+@media (max-width : 480px) {
+  /************** 480 GLOBAl USE***********/
+  .slider-text-single {
+    figure {
+      img {
+        //height: 280px;
+      }
+      figcaption {
+
+      }
+    }
+  }
+
+  /************** 480 GLOBAl USE***********/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+.lgx-subscriber-area-indiv {
+  background: url('../img/subscribe-bg.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.lgx-subscriber-area-black {
+  background: url('../img/subscribe-bg-black.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+
+.lgx-subscriber-inner {
+  //padding-top: 6.8rem;
+}
+.lgx-subscriber-inner-indiv {
+  padding: 6.8rem 0;
+}
+
+
+
+.lgx-subscribe-form {
+  /*max-width: 750px;
+  margin:  0 auto;*/
+  display: flex;
+  .bg-rgba(@white-color, .8);
+  border-radius: 100px;
+  .form-group-email {
+    width: 100%;
+  }
+  .form-control {
+    background: transparent;
+    color: @brand-color;
+    height: 65px;
+    border-radius: 100px;
+    border: none;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .lgx-input-form {
+    padding-left: 3rem;
+  }
+  .form-control:focus,
+  .form-control:hover {
+    /*.bg-rgba(@white-color, 1);*/
+    background: transparent;
+    border-color: @brand-color;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form-group-submit {
+    //width: 25%;
+  }
+  .lgx-btn {
+    padding: 2rem 6rem;
+    &:hover {
+      background: @brand-color2;
+      //border-radius: 0;
+    }
+  }
+  .lgx-input-form {
+    //border-radius: 4px;
+  }
+}
+
+
+
+.lgx-subscriber {
+  background: @white-color;
+}
+.lgx-subscriber-area {
+  margin-top: -8rem;
+  background: @brand-color;
+  padding: 4.2rem;
+  -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  //padding: 6.8rem;
+  border-radius: 1.6rem;
+  position: relative;
+  bottom: -8rem;
+  z-index: 1;
+  .lgx-subscriber-inner {
+    display: flex;
+    .subscriber-title {
+      text-align: center;
+      color: @white-color;
+      .font-size(20);
+      line-height: 2.6rem;
+      font-weight: 900;
+      margin: 0;
+      letter-spacing: .08rem;
+      //text-transform: uppercase;
+    }
+    .lgx-subscribe-form {
+      width: 100%;
+    }
+  }
+}
+
+.lgx-subscriber-full {
+  background: url('http://placehold.it/1921x854') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-subscriber-area {
+    margin-top: 0;
+    position: static;
+  }
+}
+
+@media (max-width : @screen-md-max) {
+  .lgx-subscribe-form .form-control {
+    height: 58px;
+  }
+}
+@media (max-width : @screen-sm-max) {
+  .lgx-subscribe-form .form-control {
+    height: 56px;
+  }
+}
+
+@media (max-width : @screen-xs-max) {
+  .lgx-subscribe-form .form-control {
+    height: 55px;
+  }
+  .lgx-subscriber-area .lgx-subscriber-inner {
+    display: block;
+    .subscriber-title {
+      margin-bottom: 2rem;
+    }
+  }
+}
+

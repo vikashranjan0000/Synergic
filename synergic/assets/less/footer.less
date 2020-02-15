@@ -1,0 +1,287 @@
+//FOOTER FIXED
+#content {
+  min-height: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: @body-bg;
+}
+.lgx-footer-fixed {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+//FOOTER FIXED END
+
+
+.lgx-footer {
+  background: url('http://placehold.it/1921x854') bottom center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: @white-color;
+  text-align: center;
+  .lgx-inner-footer {
+    //.bg-rgba(@body-bg-deep, .95);
+  }
+}
+
+
+
+.lgx-footer-area {
+  display: flex;
+  overflow: hidden;
+  padding: 16rem 0 6.8rem;
+}
+
+.lgx-footer-slider {
+  .lgx-footer-area {
+    padding: 6.8rem 0;
+  }
+}
+
+
+.lgx-footer-single {
+  flex: 1;
+  text-align: left;
+  color: rgba(47, 57, 69, 0.7);
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  p {
+    color: inherit;
+  }
+  .logo {
+    display: block;
+    img {
+      max-width: 190px;
+    }
+  }
+  .footer-contact {
+    margin-top: 4.2rem;
+    .font-size(16);
+    color: @black-color;
+    font-weight: 700;
+  }
+  .footer-title {
+    font-family: @lgx-base-font;
+    .font-size(16);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    color: @black-color;
+    font-weight: 900;
+  }
+  ul {
+    li {
+      font-family: @lgx-base-font;
+      .font-size(16);
+      color: rgba(47, 57, 69, 0.7);
+      line-height: 3rem;
+      a {
+        font: inherit;
+        color: inherit;
+        .transition-duration(@duration: 0.3s);
+      }
+      &:hover {
+        color: @brand-color3;
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.lgx-footer-bottom {
+  border-top: 1px solid rgba(47, 57, 69, .1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  padding-top: 2rem;
+  padding-bottom: 4.2rem;
+  text-align: left;
+  color: rgba(47, 57, 69, 0.4);
+  font-family: @lgx-base-font;
+  .font-size(14);
+  font-weight: 400;
+  p {
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    //letter-spacing: .08rem;
+    span, a {
+      color: @brand-color3;
+    }
+  }
+}
+
+.lgx-footer-area-center .lgx-footer-single {
+  text-align: center;
+}
+
+
+
+
+
+//
+.lgx-footer-black,
+.lgx-footer-brand {
+  background: url('http://placehold.it/1921x854') bottom center no-repeat;
+  .lgx-footer-single {
+    flex: 1;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    .footer-contact {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .text {
+      margin-bottom: 1rem;
+    }
+    .lgx-btn {
+      padding: 1.3rem 5rem;
+    }
+    p {
+      color: inherit;
+    }
+    .logo {
+      display: block;
+    }
+    address {
+      margin-bottom: 1.5rem;
+      line-height: 2.4rem;
+      i {
+        overflow: hidden;
+        color: @brand-color;
+        margin-right: 5px;
+        opacity: .4;
+      }
+    }
+    .lgx-address-info {
+      li {
+        line-height: 2.5rem;
+      }
+      i {
+        color: @brand-color;
+        margin-right: 1rem;
+        opacity: .4;
+      }
+      li {
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+    .date {
+      color: @brand-color3;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .map-link {
+      color: @white-color;
+      font-weight: 400;
+      i {
+        position: relative;
+        top: 3px;
+        .font-size(26);
+        color: @brand-color3;
+        margin-right: 5px;
+      }
+      &:hover {
+        color: @brand-color3;
+      }
+    }
+    .footer-title {
+      font-family: @lgx-base-font;
+      .font-size(16);
+      text-transform: uppercase;
+      margin-bottom: 2.4rem;
+      color: @white-color;
+      font-weight: 700;
+      letter-spacing: .08rem;
+    }
+    ul {
+      li {
+        font-family: @lgx-base-font;
+        .font-size(16);
+        color: rgba(255, 255, 255, 0.4);
+        line-height: 3rem;
+        a {
+          font: inherit;
+          color: inherit;
+          .transition-duration(@duration: 0.3s);
+        }
+        &:hover {
+          color: @white-color;
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+    .opening-time-single {
+      margin-bottom: 1rem;
+      font-family: @lgx-base-font;
+      span {
+        font-family: @lgx-base-font;
+        display: block;
+        i {
+          color: @brand-color;
+          font-style: normal;
+          font-weight: 700;
+          opacity: .4;
+        }
+      }
+    }
+  }
+  .lgx-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, 0.4);
+    p {
+      color: inherit;
+      span, a {
+        color: @brand-color3;
+      }
+    }
+  }
+}
+
+.lgx-footer-brand {
+  background: url('http://placehold.it/1921x854') bottom center no-repeat;
+}
+
+.lgx-footer-center {
+  .lgx-footer-single {
+    text-align: center;
+  }
+}
+
+
+@media (max-width : @screen-xs-max) {
+  .lgx-footer-fixed {
+    //position: static;
+  }
+  .lgx-footer-area {
+    display: block;
+    .lgx-footer-single {
+      text-align: center;
+      margin-bottom: 4.2rem;
+      .footer-title {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+.lgx-facilities {
+  background: url('http://placehold.it/1921x1000') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.7);
+  p {
+    color: inherit;
+  }
+  .lgx-videoicon-area {
+    padding: 14rem 0;
+  }
+}
+
+.lgx-facilities-fulbg {
+  background: url('http://placehold.it/1921x1000') top center no-repeat;
+}
+
+.lgx-video-area {
+  background: url('http://placehold.it/558x652') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+}
+
+.lgx-facilities-area {
+  margin-top: 2rem;
+  .lgx-facilities-list {
+    .single-list {
+      margin-bottom: 4.2rem;
+      display: block;
+      img {
+        max-width: 300px;
+        float: left;
+        margin-right: 1.6rem;
+      }
+      .list-text {
+        overflow: hidden;
+        .list-title {
+          color: @white-color;
+          .font-size(20);
+          text-transform: uppercase;
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+//FACILITIES RESPONSIVE
+@media (max-width : @screen-xs-max) {
+  .lgx-facilities {
+    background: @brand-color;
+  }
+  .lgx-facilities {
+    .lgx-video-area {
+      margin-bottom: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.lgx-heading {
+  text-align: left;
+  margin-bottom: 6.8rem;
+  overflow: hidden;
+  display: block;
+  //margin-top: -1.6rem;
+  .pretitle {
+    .font-size(20);
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    padding-left: 50px;
+    margin: 0;
+    color: rgba(47, 57, 69, 0.4);
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: @brand-color2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, @brand-color3, @brand-color2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, @brand-color3, @brand-color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: width .3s;
+      left: -6px;
+      top: 14px;
+    }
+  }
+  .heading {
+    font-family: @lgx-base-font;
+    .font-size(42);
+    color: @black-color;
+    font-weight: 900;
+    margin: 0 0 1rem;
+    line-height: 5rem;
+    span {
+      color: @brand-color2;
+    }
+  }
+  .subheading {
+    font-family: @lgx-base-font;
+    .font-size(16);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+.lgx-heading-white {
+  .pretitle {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .heading {
+    color: @white-color;
+  }
+  .subheading {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.lgx-heading-center {
+  text-align: center;
+}
+
+.lgx-heading-gap-xs,
+.lgx-heading-gap-sm {
+  margin-bottom: 2.6rem;
+}
+
+.lgx-heading-xs {
+  .pretitle {
+    .font-size(16);
+    padding-left: 50px;
+    &:after {
+      left: -6px;
+      top: 14px;
+    }
+  }
+  .heading {
+    .font-size(26);
+    margin: 0 0 .5rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+  }
+  .subheading {
+    .font-size(16);
+  }
+}
+
+
+.lgx-subheading {
+  font-family: @lgx-base-font;
+  .font-size(24);
+  text-align: center;
+  color: @brand-color;
+  text-transform: uppercase;
+  margin-bottom: 3.9rem;
+  margin-top: 0;
+}
+
+@media (max-width : @screen-xs-max) {
+  .lgx-heading {
+    text-align: center;
+    margin-bottom: 4.2rem;
+  }
+}
